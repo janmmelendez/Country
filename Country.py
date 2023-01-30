@@ -13,14 +13,14 @@ def display_codes(countries):
     codes_line = "Country codes: "
     for code in codes:
         codes_line += code + " "
-    print(countries)
+    print(codes_line)
 
 def view(countries):
     display_codes(countries)
     code = input("Enter country code: ")
     code = code.upper()
     if code in countries:
-        name = countries{code]
+        name = countries[code]
         print(f"Country name: {name}.\n")
     else:
         print("There is no country with that code.\n")
@@ -50,6 +50,7 @@ def main():
     countries = {"CA": "Canada",
                  "US": "United States",
                  "MX": "Mexico"}
+
     display_menu()
     while True:
         command = input("Command: ")
